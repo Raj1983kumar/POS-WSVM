@@ -1,0 +1,82 @@
+﻿@inherits LayoutComponentBase
+
+<nav class="navbar navbar-expand-lg bg-light show-shadow">
+    <div class="container-fluid">
+        <a class="navbar-brand text-black" href="#">POS</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarList" aria-controls="navBarList" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navBarList">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-secondary dropdown-toggle me-3 current" type="button" id="newBillList" data-bs-toggle="dropdown" aria-expanded="false">
+                        New Bill
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="newBillList">
+                        <li>
+                            <a class="dropdown-item" href="Retail">
+                                Retail
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Wholesale">
+                                Wholesale
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Manual">
+                                Manual
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="SavedBills">
+                        Saved Bills
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="BillHistory">
+                        Bill History
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="Items">
+                        Items
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="Inventory">
+                        Inventory
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="Reports">
+                        Reports
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-outline-secondary me-3" href="Settings">
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="page">
+    <main>
+        <article class="context px-4">
+            @Body
+        </article>
+    </main>
+</div>
